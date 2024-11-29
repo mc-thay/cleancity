@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".vista.administrador.RegistrarCiudadanoFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/verde"
+        android:layout_margin="30dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/texto_registrar_ciudadano" />
+
+    <ImageView
+        android:id="@+id/imagenperfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ico_photo"
+        android:contentDescription="@string/texto_foto2_reporte"/>
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_input"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Correo"
+        android:background="@drawable/shape_input"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_input"
+        android:layout_marginTop="10dp"
+        android:hint="Contraseña"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/boton_registrar_ciudadano"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/boton_admin_registrar"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/verde_claro"
+            android:importantForAccessibility="no" />
+    </LinearLayout>
+
+</LinearLayout>

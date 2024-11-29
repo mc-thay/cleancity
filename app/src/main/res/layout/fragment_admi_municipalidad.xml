@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="100dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".vista.administrador.AdmiMunicipalidadFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MUNICIPALIDADES"
+            android:layout_marginEnd="40dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/verde"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/boton_admin_crear"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/boton_admin_crear"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/verde_claro"
+            android:importantForAccessibility="no"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_municipalidades_admi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"/>
+</LinearLayout>

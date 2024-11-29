@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/municipalidad_nav_graph"
+    app:startDestination="@id/navHomeMuni">
+
+    <fragment
+        android:id="@+id/navHomeMuni"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadHomeFragment"
+        android:label="fragment_municipalidad_home"
+        tools:layout="@layout/fragment_municipalidad_home">
+        <action
+            android:id="@+id/action_navHomeMuni_to_navExplorarMuni"
+            app:destination="@id/navExplorarMuni"/>
+        <action
+            android:id="@+id/action_navHomeMuni_to_municipalidadDetalleReporteFragment"
+            app:destination="@id/municipalidadDetalleReporteFragment"/>
+        <action
+            android:id="@+id/action_navHomeMuni_to_municipalidadNotificacionesFragment2"
+            app:destination="@id/municipalidadNotificacionesFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/municipalidadDetalleEventoFragment"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadDetalleEventoFragment"
+        android:label="fragment_municipalidad_detalle_evento"
+        tools:layout="@layout/fragment_municipalidad_detalle_evento">
+        <argument
+            android:name="eventoId"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_municipalidadDetalleEventoFragment_to_navDetallesMuni"
+            app:destination="@id/navDetallesMuni"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navDetallesMuni"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadDetallesFragment"
+        android:label="fragment_municipalidad_detalles"
+        tools:layout="@layout/fragment_municipalidad_detalles">
+        <action
+            android:id="@+id/action_navDetallesMuni_to_municipalidadDetalleEventoFragment"
+            app:destination="@id/municipalidadDetalleEventoFragment"/>
+        <action
+            android:id="@+id/action_navDetallesMuni_to_navPerfilMuni"
+            app:destination="@id/navPerfilMuni"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navPerfilMuni"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadPerfilFragment"
+        android:label="fragment_municipalidad_perfil"
+        tools:layout="@layout/fragment_municipalidad_perfil">
+        <action
+            android:id="@+id/action_navPerfilMuni_to_navDetallesMuni"
+            app:destination="@id/navDetallesMuni"/>
+        <action
+            android:id="@+id/action_navPerfilMuni_to_municipalidadDetalleReporteFragment"
+            app:destination="@id/municipalidadDetalleReporteFragment">
+            <argument
+                android:name="reporteId"
+                app:argType="string"/>
+        </action>
+
+        <!-- Agregar fragmentos de Reportes como destinos -->
+        <fragment
+            android:id="@+id/reporteAltoFragment"
+            android:name="com.appmoviles.cleancity.vista.municipalidad.ReporteAltoFragment"
+            android:label="Reporte Alto"
+            tools:layout="@layout/fragment_reporte_alto">
+            <action
+                android:id="@+id/action_reporteAltoFragment_to_municipalidadDetalleReporteFragment"
+                app:destination="@id/municipalidadDetalleReporteFragment"/>
+            <argument
+                android:name="reporteId"
+                app:argType="string"/>
+        </fragment>
+
+        <fragment
+            android:id="@+id/reporteBajoFragment"
+            android:name="com.appmoviles.cleancity.vista.municipalidad.ReporteBajoFragment"
+            android:label="Reporte Bajo"
+            tools:layout="@layout/fragment_reporte_bajo">
+            <action
+                android:id="@+id/action_reporteBajoFragment_to_municipalidadDetalleReporteFragment"
+                app:destination="@id/municipalidadDetalleReporteFragment"/>
+            <argument
+                android:name="reporteId"
+                app:argType="string"/>
+        </fragment>
+
+        <fragment
+            android:id="@+id/reporteMedioFragment"
+            android:name="com.appmoviles.cleancity.vista.municipalidad.ReporteMedioFragment"
+            android:label="Reporte Medio"
+            tools:layout="@layout/fragment_reporte_medio">
+            <action
+                android:id="@+id/action_reporteMedioFragment_to_municipalidadDetalleReporteFragment"
+                app:destination="@id/municipalidadDetalleReporteFragment"/>
+            <argument
+                android:name="reporteId"
+                app:argType="string"/>
+        </fragment>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navRegistrarEventoMuni"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadRegistrarEventoFragment"
+        android:label="fragment_municipalidad_registrar_evento"
+        tools:layout="@layout/fragment_municipalidad_registrar_evento">
+        <action
+            android:id="@+id/action_navRegistrarEventoMuni_to_navDetallesMuni"
+            app:destination="@id/navDetallesMuni"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/municipalidadDetalleReporteFragment"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadDetalleReporteFragment"
+        android:label="Detalle de Reporte"
+        tools:layout="@layout/fragment_municipalidad_detalle_reporte">
+        <argument
+            android:name="reporteId"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navExplorarMuni"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadExplorarFragment"
+        android:label="fragment_municipalidad_explorar"
+        tools:layout="@layout/fragment_municipalidad_explorar">
+        <action
+            android:id="@+id/action_navExplorarMuni_to_navRegistrarEventoMuni"
+            app:destination="@id/navRegistrarEventoMuni"/>
+        <action
+            android:id="@+id/action_navExplorarMuni_to_municipalidadDetalleEventoFragment"
+            app:destination="@id/municipalidadDetalleEventoFragment"/>
+        <action
+            android:id="@+id/action_navExplorarMuni_to_municipalidadDetalleReporteFragment"
+            app:destination="@id/municipalidadDetalleReporteFragment">
+            <argument
+                android:name="reporteId"
+                app:argType="string"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/municipalidadNotificacionesFragment"
+        android:name="com.appmoviles.cleancity.vista.municipalidad.MunicipalidadNotificacionesFragment"
+        android:label="fragment_municipalidad_notificaciones"
+        tools:layout="@layout/fragment_municipalidad_notificaciones"/>
+</navigation>

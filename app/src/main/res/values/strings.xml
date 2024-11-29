@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">cleancity</string>
+    <string name="logo_description">Logo de la aplicación iniciando</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">54025600917-qgpg2r4c9ls16p1s6sal062mq03da6vi.apps.googleusercontent.com</string>
+
+    //LOGIN
+    <string name="bienvenida_login">Bienvenido a</string>
+    <string name="nombreapp_login">CLEANCITY</string>
+    <string name="descripcion_logo">Logo de la aplicacion tiene una flor y en medio de la flor tiene una ciudad</string>
+    <string name="correo">Correo:</string>
+    <string name="ingresacorreo">Ingrese correo</string>
+    <string name="contraseña_login">Contraseña</string>
+    <string name="ingresacontraseña_login">Ingrese contraseña</string>
+    <string name="tambien">O tambien</string>
+    <string name="iniciarse">Iniciar Sesión</string>
+    <string name="continuagoogle">Continua con Google</string>
+    <string name="nuevouser">¿Nuevo Usuario?</string>
+    <string name="registrate">Registrate</string>
+    //REGISTRO
+    <string name="crearcuenta">Crear una Cuenta</string>
+    <string name="nombreuser_registro">Nombre Completo</string>
+    <string name="ingresarnombre">Ingrese nombre completo</string>
+    <string name="Correo_registro">Correo</string>
+    <string name="ingresarcorreo">Ingrese correo</string>
+    <string name="contraseña_registro">Contraseña</string>
+    <string name="ingresarcontraseña_registro">Ingrese contraseña</string>
+    <string name="confirmarcontra_registro">Confirmar contraseña</string>
+    <string name="confirmarcontraseña_registro">Ingrese nuevamente la contraseña</string>
+    <string name="terminos_uso">Al continuar usted acepta los Términos de uso. <b><u>Lea la Política de Privacidad</u></b></string>
+    <string name="descripcion_terminos_uso">contenido de los terminos de uso</string>
+    <string name="Registrar">Registrar</string>
+    <string name="yacuenta">¿Ya tienes una cuenta?</string>
+    <string name="acceder">Acceder</string>
+    //Politicas
+    <string name="politicas">Términos de Uso de CleanCity</string>
+    <string name="politicas1">1. Aceptación de los Términos \nAl descargar, instalar y utilizar CleanCity,
+        usted acepta estar sujeto a estos términos de uso. Si no está de acuerdo con estos términos, no utilice la aplicación.
+    </string>
+    <string name="politicas2">2. Uso de la Aplicación \nCleanCity se proporciona para ayudar a los usuarios a reportar problemas
+        de limpieza pública. Usted acepta utilizar la aplicación solo para fines legales y de acuerdo con estos términos.
+    </string>
+    <string name="politicas3">3. Registro y Cuenta \nPara utilizar algunas funciones de CleanCity, debe registrarse y crear una cuenta.
+        Usted es responsable de mantener la confidencialidad de su cuenta y contraseña y de todas las actividades que ocurran bajo su cuenta.
+    </string>
+    <string name="politicas4">4. Contenido del Usuario \nAl enviar contenido a CleanCity, usted nos otorga una licencia para usar, reproducir
+        y mostrar dicho contenido en relación con la operación y mejora de la aplicación. Usted declara que tiene todos los derechos necesarios
+        sobre el contenido que envía.
+    </string>
+    <string name="politicas5">5. Privacidad\nNuestra política de privacidad describe cómo recopilamos y usamos su información.
+        Al utilizar CleanCity, usted acepta nuestra política de privacidad.
+    </string>
+    <string name="politicas6">6. Propiedad Intelectual \nTodos los derechos de propiedad intelectual en la aplicación son propiedad de
+        CleanCity o sus licenciantes. Usted no puede reproducir, distribuir, modificar, crear trabajos derivados, exhibir públicamente,
+        ejecutar públicamente, republicar, descargar, almacenar o transmitir ningún material de nuestra aplicación sin nuestro permiso previo por escrito.
+    </string>
+    <string name="politicas7">7. Limitación de Responsabilidad \nCleanCity no será responsable de ningún daño directo, indirecto, incidental,
+        especial o consecuente que surja del uso o la incapacidad de usar la aplicación.
+    </string>
+    <string name="politicas8">8. Cambios en los Términos \nPodemos modificar estos términos de uso en cualquier momento.
+        Le notificaremos sobre cualquier cambio publicando los términos actualizados en esta página.
+        Se recomienda revisar estos términos periódicamente para estar al tanto de cualquier cambio.
+    </string>
+    <string name="politicas9">9. Terminación \nPodemos suspender o cancelar su cuenta y acceso a CleanCity si viola estos términos de uso.</string>
+    <string name="politicas10">10. Ley Aplicable \nEstos términos de uso se regirán e interpretarán de acuerdo con las leyes de Perú</string>
+    <string name="politicas11">Contacto \nSi tiene alguna pregunta sobre estos términos de uso, contáctenos a <a href="mailto:cleancitycleanperu@gmail.com"><u><b>cleancitycleanperu@gmail.com</b></u></a></string>
+
+    //MENU_CIUDADANO
+    <string name="Inicio">Inicio</string>
+    <string name="Explorar">Explorar</string>
+    <string name="Reportar">Reportar</string>
+    <string name="Participar">Participar</string>
+    <string name="Perfil">Perfil</string>
+    //MENU_MUNICIPALIDAD
+    <string name="Inicio_muni">Inicio</string>
+    <string name="Explorar_muni">Explorar</string>
+    <string name="Registar_muni">Evento</string>
+    <string name="Detalles_muni">Detalles</string>
+    <string name="Perfil_muni">Perfil</string>
+
+    //Notificaciones
+    <string name="texto_notificacion">NOTIFICACIONES</string>retroceder
+    <string name="retroceder">flecha para regresar al panel anterior</string>
+    <string name="contenido_notificacion">¡Felicidades tu reporte ha sido atendido.... gracias por tu aporte ciudadano!</string>
+    <string name="tiempollegadanotificacion">Hace 10 minutos</string>
+    //REPORTES_VISTOS_POR_USUARIO
+    <string name="nombre_lugar_reporte">Basura en Vereda</string>
+    <string name="icono_notificacion">Icono de notificaciones</string>
+    <string name="nombre_ciudad_reporte">Nuevo Chimbote</string>
+    <string name="boton_ver_reporte">Ver Reporte</string>
+    <string name="descripcion_imagen_reporte">Imagen representativa del reporte</string>
+    //DETALLES_REPORTE
+    //API KEY DE GOOGLE MAP
+    //AIzaSyBfigubTbwsMjSJOpend7BXEuprtj4yGZM
+    <string name="descripcion_del_reporte">Descripción del Reporte</string>
+    <string name="contenido_de_descripcion_del_reporte">
+        Quiero compartir algo que me preocupa sobre el Parque de nuestra ciudad. Hoy, al visitarlo, noté que hay mucha basura tirada por todas partes.
+        En las áreas de juegos, cerca de los contenedores y en las zonas de descanso, vi botellas, envoltorios de comida y colillas de cigarrillos.
+        Esto no solo da una mala imagen al parque, sino que también podría ser peligroso para la salud de quienes lo visitan.
+        Sería genial que se aumentara la frecuencia de limpieza y se educara a todos sobre cómo mantener el parque limpio.
+        ¡Espero que podamos hacer algo al respecto pronto!</string>
+    <string name="foto_label_detalle_reporte">Fotos del reporte:</string>
+    <string name="texto_ubicacion_reporte_detelle_reporte">Ubicacion:</string>
+    <string name="ubicacion_reporte_detelle_reporte">Av. Juan Manuel 505</string>
+    <string name="texto_estado_reporte_detelle_reporte">Estado del Reporte:</string>
+    <string name="estado_reporte_detelle_reporte">Pendiente</string>
+    <string name="pregunta">¿Cuán importante considera usted atender este problema, en una escala del 1 al 5?</string>
+    <string name="puntuacion_uno">1</string>
+    <string name="puntuacion_dos">2</string>
+    <string name="puntuacion_tres">3</string>
+    <string name="puntuacion_cuatro">4</string>
+    <string name="puntuacion_cinco">5</string>
+    <string name="boton_seguir_reporte">Seguir Reporte</string>
+    <string name="boton_participar_evento">Participar</string>
+    <string name="boton_regresar">Regresar</string>
+    <string name="buscador">Buscar dirección</string>
+    <string name="relevancia">BAJO</string>
+    <string name="texto_relevancia">Relevancia del reporte</string>
+    //EXPLORAR_CIUDADANO
+    <string name="texto_buscar">Buscar dirección</string>
+    <string name="descripcion_mapa_explorar">Mapa para explorar reportes y eventos cercanos</string>
+    <string name="descripcion_menu_desple_explo">Menú desplegable</string>
+    //REPORTE_EXPLORAR
+    <string name="texto_relevancia_bsd">Relevancia:</string>
+    <string name="texto_estado">Estado:</string>
+    <string name="texto_comentario">Comentarios:</string>
+    <string name="contenido_relevancia">Bajo</string>
+    <string name="contenido_estado">Pendiente</string>
+    <string name="contenido_comentario">10</string>
+
+    //EVENTO_EXPLORAR
+    <string name="texto_fecha_evento">Fecha del Evento:</string>
+    <string name="texto_hora_evento">Hora del Evento:</string>
+    <string name="texto_participantes_evento">Participantes:</string>
+
+    //REALIZAR REPORTE
+    <string name="texto_registra_reporte">REALIZAR REPORTE</string>
+    <string name="texto_titulo_reporte">Titulo:</string>
+    <string name="texto_titulo_ejemplo">Basura por Parque San Jeronimo</string>
+    <string name="texto_descripcion_reporte">Descripción:</string>
+    <string name="texto_descripcio_ejemplo_reporte">Ejemplo:Quiero compartir algo que me preocupa sobre el Parque de nuestra ciudad. Hoy, al visitarlo, noté que hay mucha basura tirada por todas partes.
+        En las áreas de juegos, cerca de los contenedores y en las zonas de descanso, vi botellas, envoltorios de comida y colillas de cigarrillos.
+        Esto no solo da una mala imagen al parque, sino que también podría ser peligroso para la salud de quienes lo visitan.
+        Sería genial que se aumentara la frecuencia de limpieza y se educara a todos sobre cómo mantener el parque limpio.
+        ¡Espero que podamos hacer algo al respecto pronto!</string>
+    <string name="texto_direccion_reporte">Dirección:</string>//texto
+    <string name="texto_direccion_ejemplo_reporte">Se tomara su ubicacion actual</string>//texto
+    <string name="texto_ubicacion_reporte">Ubicación:</string>
+    //mapa
+    <string name="texto_ciudad_reporte">Ciudad:</string>
+    <string name="texto_ciudad_ejemplo_reporte">Chimbote</string>
+    <string name="texto_fotos_reporte">Agregar Fotos:</string>
+    <string name="texto_foto1_reporte">Foto del reporte uno</string>
+    <string name="texto_foto2_reporte">Foto del reporte dos</string>
+    <string name="texto_foto3_reporte">Foto del reporte tres</string>
+    <string name="texto_enviar_reporte">Enviar Reporte</string>
+    <string name="texto_automatico">Automaticamente</string>
+    <string name="texto_manual">Manualente</string>
+    //VER EVENTO
+    <string name="texto_ver_evento">EVENTO/CAMPAÑAS</string>
+    <string name="txt_descripcion_evento">Descripcion:</string>
+    <string name="txt_fecha_evento">Fecha del evento:</string>
+    <string name="txt_hora_evento">Hora del evento:</string>
+    <string name="txt_equipamiento_evento">Equipamiento necesario:</string>
+    <string name="boton_no_participar">No participar</string>
+    <string name="boton_participar">Participar</string>
+    <string name="participantes_count">Participantes: %d</string>
+    //PERFIL
+    <string name="boton_cerrar_sesion">Cerrar Sesion</string>
+    <string name="boton_editar_perfil">Editar Perfil</string>
+    <string name="texto_nameuser">Nombre de Usuario</string>
+    <string name="Eventos_texto_perfil">Eventos</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="tab_actividad">Actividad</string>
+    <string name="tab_reportes">Reportes</string>
+    <string name="tab_eventos">Eventos</string>
+    <string name="tab_siguiendo">Siguiendo</string>
+    <string name="tab_mis_reportes">Mis Reportes</string>
+    <string name="foto_perfil_desc">Foto de perfil del usuario</string>
+    <string name="tab_layout_desc">Navegación de pestañas del perfil del usuario</string>
+    <string name="boton_dejarseguir_perfil">Dejar de seguir</string>
+    <string name="tabs_description">Navegación de pestañas para ver reportes seguidos y mis reportes</string>
+
+    //INTERFAZ MUNICIPALIDAD
+    <string name="boton_reporte_atendido">Atendido</string>
+    <string name="boton_eliminar_reporte">Eliminar</string>
+    <string name="texto_registra_evento">REALIZAR EVENTO</string>
+    //REGISTRAR EVENTO
+    <string name="texto_titulo_ejemplo_evento">Limpieza la playa de Nuevo Chimbote</string>
+    <string name="texto_descripcion_ejemplo_evento_limpieza">Ejemplo: Queremos invitar a todos a un evento de limpieza en la playa.
+        Durante nuestra última visita, observamos que había una gran cantidad de basura acumulada en la arena y a lo largo de la orilla.
+        Con este evento, buscamos limpiar la playa y devolverle su belleza. Tu participación será clave para mantener nuestro entorno
+        costero en óptimas condiciones y seguro para todos los visitantes. ¡Esperamos contar con tu apoyo para hacer de la playa un lugar
+        más agradable y limpio!</string>
+    <string name="boton_modificar_evento">Modificar</string>
+    <string name="boton_eliminar_evento">Eliminar</string>boton_guardar_cambios
+    <string name="boton_guardar_cambios">Guardar cambios</string>
+
+    //ADMINISTRADOR
+    <string name="admin_reportes">Reportes</string>
+    <string name="admin_eventos">Eventos</string>
+    <string name="admin_municipalidad">Municipalidad</string>
+    <string name="admin_ciudadano">Ciudadano</string>
+    <string name="admin_perfil">Perfil</string>
+    <string name="boton_admin_crear">Crear Nuevo</string>
+    <string name="boton_admin_eliminar">Eliminar</string>
+    <string name="boton_admin_registrar">Registrar</string>
+    <string name="texto_registrar_ciudadano">Registrar Usuario Ciudadano</string>
+    <string name="boton_admin_regresar">Regresar</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome"
+        android:title="@string/Inicio"
+        android:icon="@drawable/ico_home" />
+    <item
+        android:id="@+id/navExplorar"
+        android:title="@string/Explorar"
+        android:icon="@drawable/ico_explorar" />
+    <item
+        android:id="@+id/navReportar"
+        android:title="@string/Reportar"
+        android:icon="@drawable/ico_agregar" />
+    <item
+        android:id="@+id/navParticipar"
+        android:title="@string/Participar"
+        android:icon="@drawable/ico_participar"/>
+    <item
+        android:id="@+id/navPerfil"
+        android:title="@string/Perfil"
+        android:icon="@drawable/ico_perfil"/>
+</menu>

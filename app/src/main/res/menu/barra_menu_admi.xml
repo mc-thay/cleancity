@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navReportes"
+        android:title="@string/admin_reportes"
+        android:icon="@drawable/ico_reportes" />
+    <item
+        android:id="@+id/navEventos"
+        android:title="@string/admin_eventos"
+        android:icon="@drawable/ico_eventos" />
+    <item
+        android:id="@+id/navMunicipalidad"
+        android:title="@string/admin_municipalidad"
+        android:icon="@drawable/ico_municipalidad" />
+    <item
+        android:id="@+id/navCiudadano"
+        android:title="@string/admin_ciudadano"
+        android:icon="@drawable/ico_participar"/>
+    <item
+        android:id="@+id/navPerfilAdmi"
+        android:title="@string/admin_perfil"
+        android:icon="@drawable/ico_perfil"/>
+</menu>

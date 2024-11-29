@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "54025600917",
+    "project_id": "cleancityapp-8a65f",
+    "storage_bucket": "cleancityapp-8a65f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54025600917:android:042020120fd054c06f409c",
+        "android_client_info": {
+          "package_name": "com.appmoviles.cleancity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54025600917-nljj0hq46edtkkcoc5f7g0eg9sgshqrp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appmoviles.cleancity",
+            "certificate_hash": "1d14c97383737be2319f8e6f551f868ec56175db"
+          }
+        },
+        {
+          "client_id": "54025600917-qgpg2r4c9ls16p1s6sal062mq03da6vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfigubTbwsMjSJOpend7BXEuprtj4yGZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54025600917-qgpg2r4c9ls16p1s6sal062mq03da6vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

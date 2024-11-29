@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_bajo"
+        android:title="Relevancia Baja" />
+    <item
+        android:id="@+id/menu_media"
+        android:title="Relevancia Media" />
+    <item
+        android:id="@+id/menu_alta"
+        android:title="Relevancia Alta" />
+    <item
+        android:id="@+id/menu_eventos"
+        android:title="Eventos" />
+</menu>

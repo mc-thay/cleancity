@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ciudadano_nav_graph"
+    app:startDestination="@id/navHome">
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoHomeFragment"
+        android:label="fragment_ciudadano_home"
+        tools:layout="@layout/fragment_ciudadano_home">
+        <action
+            android:id="@+id/action_ciudadanoHomeFragment_to_ciudadanoDetalleReporteFragment"
+            app:destination="@id/ciudadanoDetalleReporteFragment">
+            <argument
+                android:name="reporteId"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+        <action
+            android:id="@+id/action_ciudadanoHomeFragment_to_ciudadanoNotificacionesFragment"
+            app:destination="@id/ciudadanoNotificacionesFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navExplorar"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoExplorarFragment"
+        android:label="fragment_ciudadano_explorar"
+        tools:layout="@layout/fragment_ciudadano_explorar">
+        <action
+            android:id="@+id/action_ciudadanoExplorarFragment_to_ciudadanoDetalleReporteFragment"
+            app:destination="@id/ciudadanoDetalleReporteFragment">
+            <argument
+                android:name="reporteId"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+        <action
+            android:id="@+id/action_navExplorar_to_ciudadanoDetalleEventoFragment"
+            app:destination="@id/ciudadanoDetalleEventoFragment">
+            <argument
+                android:name="eventoId"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navReportar"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoReportarFragment"
+        android:label="fragment_ciudadano_reportar"
+        tools:layout="@layout/fragment_ciudadano_reportar">
+        <action
+            android:id="@+id/action_ciudadanoReportarFragment_to_ciudadanoHomeFragment"
+            app:destination="@id/navHome"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navParticipar"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoParticiparFragment"
+        android:label="fragment_ciudadano_participar"
+        tools:layout="@layout/fragment_ciudadano_participar">
+        <action
+            android:id="@+id/action_navParticipar_to_ciudadanoDetalleEventoFragment"
+            app:destination="@id/ciudadanoDetalleEventoFragment">
+            <argument
+                android:name="eventoId"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navPerfil"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoPerfilFragment"
+        android:label="fragment_ciudadano_perfil"
+        tools:layout="@layout/fragment_ciudadano_perfil">
+        <action
+            android:id="@+id/action_ciudadanoPerfilFragment_to_ciudadanoHomeFragment"
+            app:destination="@id/navHome"/>
+        <action
+            android:id="@+id/action_ciudadanoPerfilFragment_to_editarPerfilFragment"
+            app:destination="@id/editarPerfilFragment"/>
+        <action
+            android:id="@+id/action_navPerfil_to_ciudadanoPerfilReportesFragment"
+            app:destination="@id/ciudadanoPerfilReportesFragment" />
+        <action
+            android:id="@+id/action_navPerfil_to_ciudadanoPerfilEventosFragment"
+            app:destination="@id/ciudadanoPerfilEventosFragment" />
+        <fragment
+            android:id="@+id/ciudadanoPerfilReportesSiguiendoFragment"
+            android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoPerfilReportesSiguiendoFragment"
+            android:label="fragment_ciudadano_perfil_reportes_siguiendo"
+            tools:layout="@layout/fragment_ciudadano_perfil_reportes_siguiendo" >
+            <action
+                android:id="@+id/action_ciudadanoPerfilReportesSiguiendoFragment_to_ciudadanoDetalleReporteFragment"
+                app:destination="@id/ciudadanoDetalleReporteFragment" />
+            <argument
+                android:name="reporteId"
+                app:argType="string"
+                android:defaultValue=""/>
+        </fragment>
+        <action
+            android:id="@+id/action_navPerfil_to_ciudadanoDetalleEventoFragment"
+            app:destination="@id/ciudadanoDetalleEventoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ciudadanoDetalleReporteFragment"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoDetalleReporteFragment"
+        android:label="fragment_ciudadano_detalle_reporte"
+        tools:layout="@layout/fragment_ciudadano_detalle_reporte">
+        <argument
+            android:name="reporteId"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_ciudadanoDetalleReporteFragment_to_navHome"
+            app:destination="@id/navHome"/>
+        <action
+            android:id="@+id/action_ciudadanoDetalleReporteFragment_to_navExplorar"
+            app:destination="@id/navExplorar"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ciudadanoDetalleEventoFragment"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoDetalleEventoFragment"
+        android:label="fragment_ciudadano_detalle_evento"
+        tools:layout="@layout/fragment_ciudadano_detalle_evento">
+        <argument
+            android:name="eventoId"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_ciudadanoDetalleEventoFragment_to_navParticipar"
+            app:destination="@id/navParticipar"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ciudadanoNotificacionesFragment"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoNotificacionesFragment"
+        android:label="fragment_ciudadano_notificaciones"
+        tools:layout="@layout/fragment_ciudadano_notificaciones">
+        <action
+            android:id="@+id/action_ciudadanoNotificacionesFragment_to_navHome"
+            app:destination="@id/navHome"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editarPerfilFragment"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.EditarPerfilFragment"
+        android:label="fragment_editar_perfil"
+        tools:layout="@layout/fragment_editar_perfil" />
+    <fragment
+        android:id="@+id/ciudadanoPerfilReportesFragment"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoPerfilReportesFragment"
+        android:label="fragment_ciudadano_perfil_reportes"
+        tools:layout="@layout/fragment_ciudadano_perfil_reportes" >
+        <action
+            android:id="@+id/action_ciudadanoPerfilReportesFragment_to_ciudadanoPerfilReportesMisReportesFragment"
+            app:destination="@id/ciudadanoPerfilReportesMisReportesFragment" />
+        <action
+            android:id="@+id/action_ciudadanoPerfilReportesFragment_to_ciudadanoPerfilReportesSiguiendoFragment"
+            app:destination="@id/ciudadanoPerfilReportesSiguiendoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ciudadanoPerfilReportesMisReportesFragment"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoPerfilReportesMisReportesFragment"
+        android:label="fragment_ciudadano_perfil_reportes_mis_reportes"
+        tools:layout="@layout/fragment_ciudadano_perfil_reportes_mis_reportes" />
+    <fragment
+        android:id="@+id/ciudadanoPerfilEventosFragment"
+        android:name="com.appmoviles.cleancity.vista.ciudadano.CiudadanoPerfilEventosFragment"
+        android:label="fragment_ciudadano_perfil_eventos"
+        tools:layout="@layout/fragment_ciudadano_perfil_eventos" >
+        <action
+            android:id="@+id/action_ciudadanoPerfilEventosFragment_to_ciudadanoDetalleEventoFragment"
+            app:destination="@id/ciudadanoDetalleEventoFragment" />
+    </fragment>
+
+</navigation>

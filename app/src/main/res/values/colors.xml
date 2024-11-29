@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde">#1D8143</color>
+    <color name="verde_claro">#39E079</color>
+    <color name="inputs">#6B706E</color>
+    <color name="inhabilitado">#393A3A</color>
+    <color name="noti">#FF9800</color>
+    <color name="modificar">#0070BA</color>
+</resources>
